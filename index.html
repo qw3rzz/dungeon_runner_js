@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dungeon Runner</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="gameWrapper">
+    <canvas id="c"></canvas>
+
+    <div id="hud">
+        <span id="scoreEl">&#9760; 0</span>
+        <span id="bestEl"> 0</span>
+    </div>
+
+    <div id="overlay">
+        <h1>DUNGEON RUNNER</h1>
+        <p class="sub">SKELETON RUNNING THROUGH DARK TEMPLE<br>Jump over obstacles and try to survive!</p>
+        <p class="sub">SPACE BAR / MOUSE CLICK — JUMP<br>DOUBLE JUMP ALLOWED!</p>
+        <p class="blink">[ PRESS SPACE ]</p>
+    </div>
+    <div id="pauseMenu">
+        <h2>⏸ PAUSED</h2>
+        <button class="menu-btn" id="btnRetry">▶ RETRY</button>
+        <button class="menu-btn" id="btnExit">✕ EXIT</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
