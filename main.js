@@ -61,7 +61,7 @@ function killPlayer() {
         overlay.innerHTML = `
       <h1>You died.</h1>
       <p class="score-display">SCORE:: ${score}</p>
-      <p class="best-display">YO UR BEST:: ${best}</p>
+      <p class="best-display">YOUR BEST:: ${best}</p>
       <p class="blink">[ SPACE / MOUSE CLICK — RETRY ]</p>`;
         overlay.style.display = 'flex';
     }, 600);
@@ -256,7 +256,7 @@ function update() {
         if (player.animTimer > 6) { player.animFrame++; player.animTimer = 0; }
     }
 
-    // Parallax posun pozadí
+    // Parallax background
     bgOffset1 = (bgOffset1 + speed * 0.3) % W;
     bgOffset2 = (bgOffset2 + speed * 0.8) % W;
     for (const t of torches) {
@@ -304,7 +304,7 @@ function draw() {
     ctx.fillStyle = '#0d0b0f';
     ctx.fillRect(0, 0, W, H);
 
-    // Stone bg blocks (layer 1 — slow)
+    // Stone bg blocks
     ctx.fillStyle = '#141018';
     for (let i = 0; i < 12; i++) {
         const bx = ((i * 110 - bgOffset1 + W * 2) % (W + 120)) - 10;
